@@ -1,4 +1,10 @@
+# Do not gitignore Cargo.lock because nix flake needs it!
+
+# Cargo
 /target
+
+# Nix
+/result 
+
 **/*.rs.bk
-Cargo.lock
 .idea

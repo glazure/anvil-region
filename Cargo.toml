@@ -10,6 +10,9 @@ repository = "https://github.com/eihwaz/anvil-region"
 keywords = ["minecraft", "region", "anvil", "io"]
 readme = "README.md"
 include = ["src/**/*", "LICENSE", "README.md", "test/*"]
+exclude = [
+    "Cargo.lock", # explicit ignore, but we need lockfile for Nix flake
+]
 
 [dependencies]
 byteorder = "1.3"
